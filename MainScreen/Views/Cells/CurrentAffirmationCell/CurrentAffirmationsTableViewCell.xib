@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CurrentAffirmationsTableViewCell" selectionStyle="none" indentationWidth="10" rowHeight="284" id="KGk-i7-Jjw" customClass="CurrentAffirmationsTableViewCell" customModule="AffirmationDays" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKQ-kv-nhZ">
+                        <rect key="frame" x="20" y="0.0" width="280" height="269"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MSC-7o-EVn">
+                                <rect key="frame" x="205" y="15" width="50" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="d1X-6M-OcD"/>
+                                    <constraint firstAttribute="width" constant="50" id="yTP-6L-7c7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gi-Jt-FgA">
+                                <rect key="frame" x="25" y="15" width="61.5" height="50.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textAffirmIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7dm-uk-apw">
+                                <rect key="frame" x="25" y="80.5" width="20" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="B2P-Kr-iJZ"/>
+                                    <constraint firstAttribute="height" constant="10" id="MMS-VW-CD4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOV-3b-enr">
+                                <rect key="frame" x="50" y="77.5" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqg-bD-zQs">
+                                <rect key="frame" x="25" y="108.5" width="230" height="1"/>
+                                <color key="backgroundColor" name="textColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="rAv-cE-0SL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xB7-aq-VFw" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="25" y="119.5" width="28.5" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xB7-aq-VFw" secondAttribute="height" multiplier="1:1" id="6i1-TE-9qD"/>
+                                </constraints>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwl-Ga-YY8" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="58.5" y="119.5" width="28.5" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lwl-Ga-YY8" secondAttribute="height" multiplier="1:1" id="qUc-ky-OM4"/>
+                                </constraints>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXq-lX-uGP" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="92" y="119.5" width="28.5" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZXq-lX-uGP" secondAttribute="height" multiplier="1:1" id="vbc-bd-8bQ"/>
+                                </constraints>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfK-lV-doa" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="125.5" y="119.5" width="29" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HfK-lV-doa" secondAttribute="height" multiplier="1:1" id="yTo-Ba-tqF"/>
+                                </constraints>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I90-fF-fBD" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="159.5" y="119.5" width="28.5" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I90-fF-fBD" secondAttribute="height" multiplier="1:1" id="mff-g1-NTy"/>
+                                </constraints>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCJ-5u-isj" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="193" y="119.5" width="28.5" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gCJ-5u-isj" secondAttribute="height" multiplier="1:1" id="iNv-ba-VqD"/>
+                                </constraints>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQx-Ir-Aip" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="226.5" y="119.5" width="28.5" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xQx-Ir-Aip" secondAttribute="height" multiplier="1:1" id="Q9Z-PY-u4K"/>
+                                </constraints>
+                            </view>
+                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crh-Sf-HIF" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="25" y="153.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="crh-Sf-HIF" secondAttribute="height" multiplier="1:1" id="gR3-Dc-jaG"/>
+                                </constraints>
+                            </view>
+                            <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4c-Hh-jJq" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="58.5" y="153.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j4c-Hh-jJq" secondAttribute="height" multiplier="1:1" id="Rnw-gk-emq"/>
+                                </constraints>
+                            </view>
+                            <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ItS-4D-mcU" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="92" y="153.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ItS-4D-mcU" secondAttribute="height" multiplier="1:1" id="V5L-eC-OHi"/>
+                                </constraints>
+                            </view>
+                            <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLt-q1-MVc" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="125.5" y="153.5" width="29" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tLt-q1-MVc" secondAttribute="height" multiplier="1:1" id="A5l-Lw-4gd"/>
+                                </constraints>
+                            </view>
+                            <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYj-QD-EBg" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="159.5" y="153.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AYj-QD-EBg" secondAttribute="height" multiplier="1:1" id="0Il-Vi-oji"/>
+                                </constraints>
+                            </view>
+                            <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zeh-ea-oQa" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="193" y="153.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zeh-ea-oQa" secondAttribute="height" multiplier="1:1" id="Vd6-hG-tEg"/>
+                                </constraints>
+                            </view>
+                            <view tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xX7-0S-9Rd" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="226.5" y="153.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xX7-0S-9Rd" secondAttribute="height" multiplier="1:1" id="Tax-7y-j1U"/>
+                                </constraints>
+                            </view>
+                            <view tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xD0-rm-7lY" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="25" y="187" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xD0-rm-7lY" secondAttribute="height" multiplier="1:1" id="a7M-Pl-HGP"/>
+                                </constraints>
+                            </view>
+                            <view tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGT-kP-Jpl" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="58.5" y="187" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tGT-kP-Jpl" secondAttribute="height" multiplier="1:1" id="ZEw-gx-5db"/>
+                                </constraints>
+                            </view>
+                            <view tag="16" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NB-h8-Ulc" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="92" y="187" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3NB-h8-Ulc" secondAttribute="height" multiplier="1:1" id="GHj-KR-gLI"/>
+                                </constraints>
+                            </view>
+                            <view tag="17" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-yf-Tgg" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="125.5" y="187" width="29" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qxU-yf-Tgg" secondAttribute="height" multiplier="1:1" id="TVa-3c-Dht"/>
+                                </constraints>
+                            </view>
+                            <view tag="18" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="max-pB-cW7" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="159.5" y="187" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="max-pB-cW7" secondAttribute="height" multiplier="1:1" id="pNB-i8-EAs"/>
+                                </constraints>
+                            </view>
+                            <view tag="19" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWw-rw-AAU" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="193" y="187" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fWw-rw-AAU" secondAttribute="height" multiplier="1:1" id="hPT-AP-fCE"/>
+                                </constraints>
+                            </view>
+                            <view tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUN-Pm-qL2" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="226.5" y="187" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kUN-Pm-qL2" secondAttribute="height" multiplier="1:1" id="fiw-CL-b2j"/>
+                                </constraints>
+                            </view>
+                            <view tag="21" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fn-wG-KCS" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="25" y="220.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7fn-wG-KCS" secondAttribute="height" multiplier="1:1" id="DFy-rH-euy"/>
+                                </constraints>
+                            </view>
+                            <view tag="22" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2u-ZD-NCw" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="58.5" y="220.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X2u-ZD-NCw" secondAttribute="height" multiplier="1:1" id="Bml-Km-lw5"/>
+                                </constraints>
+                            </view>
+                            <view tag="23" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyN-g7-Gn1" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="92" y="220.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nyN-g7-Gn1" secondAttribute="height" multiplier="1:1" id="TUx-WH-reC"/>
+                                </constraints>
+                            </view>
+                            <view tag="24" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6q-j8-7jX" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="125.5" y="220.5" width="29" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K6q-j8-7jX" secondAttribute="height" multiplier="1:1" id="WJ2-Bf-bkr"/>
+                                </constraints>
+                            </view>
+                            <view tag="25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzl-dJ-jaD" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="159.5" y="220.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Mzl-dJ-jaD" secondAttribute="height" multiplier="1:1" id="mg3-qL-GU5"/>
+                                </constraints>
+                            </view>
+                            <view tag="26" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJf-Jn-hFF" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="193" y="220.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yJf-Jn-hFF" secondAttribute="height" multiplier="1:1" id="jQH-Hs-PKC"/>
+                                </constraints>
+                            </view>
+                            <view tag="27" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tB-Ae-x6R" customClass="DayView" customModule="AffirmationDays" customModuleProvider="target">
+                                <rect key="frame" x="226.5" y="220.5" width="28.5" height="28.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3tB-Ae-x6R" secondAttribute="height" multiplier="1:1" id="ZNT-aM-qo2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="secondaryAppColor"/>
+                        <constraints>
+                            <constraint firstItem="max-pB-cW7" firstAttribute="leading" secondItem="qxU-yf-Tgg" secondAttribute="trailing" constant="5" id="0mB-fS-9UP"/>
+                            <constraint firstItem="tGT-kP-Jpl" firstAttribute="top" secondItem="j4c-Hh-jJq" secondAttribute="bottom" constant="5" id="16s-dp-0MW"/>
+                            <constraint firstItem="xD0-rm-7lY" firstAttribute="width" secondItem="max-pB-cW7" secondAttribute="width" id="1Eb-Kx-FxQ"/>
+                            <constraint firstItem="I90-fF-fBD" firstAttribute="top" secondItem="nqg-bD-zQs" secondAttribute="bottom" constant="10" id="1tf-ch-6Jq"/>
+                            <constraint firstItem="tLt-q1-MVc" firstAttribute="top" secondItem="HfK-lV-doa" secondAttribute="bottom" constant="5" id="3lV-01-yOF"/>
+                            <constraint firstItem="crh-Sf-HIF" firstAttribute="top" secondItem="xB7-aq-VFw" secondAttribute="bottom" constant="5" id="3s3-4F-QAZ"/>
+                            <constraint firstAttribute="trailing" secondItem="kUN-Pm-qL2" secondAttribute="trailing" constant="25" id="468-ba-1an"/>
+                            <constraint firstItem="qxU-yf-Tgg" firstAttribute="leading" secondItem="3NB-h8-Ulc" secondAttribute="trailing" constant="5" id="4DK-Zg-cYP"/>
+                            <constraint firstItem="MSC-7o-EVn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0gi-Jt-FgA" secondAttribute="trailing" constant="10" id="4oO-J5-4Wj"/>
+                            <constraint firstItem="nqg-bD-zQs" firstAttribute="top" secondItem="JOV-3b-enr" secondAttribute="bottom" constant="15" id="5ed-nW-E6d"/>
+                            <constraint firstItem="7fn-wG-KCS" firstAttribute="width" secondItem="X2u-ZD-NCw" secondAttribute="width" id="6cn-as-Zru"/>
+                            <constraint firstItem="crh-Sf-HIF" firstAttribute="width" secondItem="Zeh-ea-oQa" secondAttribute="width" id="8Kx-Pl-9fx"/>
+                            <constraint firstItem="xD0-rm-7lY" firstAttribute="width" secondItem="qxU-yf-Tgg" secondAttribute="width" id="9IP-G3-qVK"/>
+                            <constraint firstItem="crh-Sf-HIF" firstAttribute="width" secondItem="xX7-0S-9Rd" secondAttribute="width" id="AqX-hm-ok2"/>
+                            <constraint firstItem="crh-Sf-HIF" firstAttribute="width" secondItem="tLt-q1-MVc" secondAttribute="width" id="C3q-Tx-CTa"/>
+                            <constraint firstItem="qxU-yf-Tgg" firstAttribute="top" secondItem="tLt-q1-MVc" secondAttribute="bottom" constant="5" id="CfH-PR-RXx"/>
+                            <constraint firstItem="lwl-Ga-YY8" firstAttribute="leading" secondItem="xB7-aq-VFw" secondAttribute="trailing" constant="5" id="Cq4-3m-6Ic"/>
+                            <constraint firstAttribute="trailing" secondItem="xX7-0S-9Rd" secondAttribute="trailing" constant="25" id="DOG-iE-U1S"/>
+                            <constraint firstItem="0gi-Jt-FgA" firstAttribute="top" secondItem="fKQ-kv-nhZ" secondAttribute="top" constant="15" id="DhH-ds-rNZ"/>
+                            <constraint firstItem="7fn-wG-KCS" firstAttribute="width" secondItem="yJf-Jn-hFF" secondAttribute="width" id="Dvh-yX-eNM"/>
+                            <constraint firstItem="kUN-Pm-qL2" firstAttribute="top" secondItem="xX7-0S-9Rd" secondAttribute="bottom" constant="5" id="ERT-mu-Yx0"/>
+                            <constraint firstItem="Zeh-ea-oQa" firstAttribute="top" secondItem="gCJ-5u-isj" secondAttribute="bottom" constant="5" id="Fgs-gE-kjE"/>
+                            <constraint firstItem="xB7-aq-VFw" firstAttribute="width" secondItem="I90-fF-fBD" secondAttribute="width" id="Fn7-S9-JNK"/>
+                            <constraint firstItem="7fn-wG-KCS" firstAttribute="width" secondItem="nyN-g7-Gn1" secondAttribute="width" id="G1w-2N-AkG"/>
+                            <constraint firstItem="crh-Sf-HIF" firstAttribute="width" secondItem="j4c-Hh-jJq" secondAttribute="width" id="G6A-Xp-d0d"/>
+                            <constraint firstItem="K6q-j8-7jX" firstAttribute="top" secondItem="qxU-yf-Tgg" secondAttribute="bottom" constant="5" id="GRX-qb-gaZ"/>
+                            <constraint firstItem="max-pB-cW7" firstAttribute="top" secondItem="AYj-QD-EBg" secondAttribute="bottom" constant="5" id="HGz-7x-MbZ"/>
+                            <constraint firstItem="xX7-0S-9Rd" firstAttribute="leading" secondItem="Zeh-ea-oQa" secondAttribute="trailing" constant="5" id="HsY-y8-j30"/>
+                            <constraint firstItem="xD0-rm-7lY" firstAttribute="width" secondItem="tGT-kP-Jpl" secondAttribute="width" id="IAY-X8-JAj"/>
+                            <constraint firstItem="lwl-Ga-YY8" firstAttribute="top" secondItem="nqg-bD-zQs" secondAttribute="bottom" constant="10" id="IR3-FG-9s7"/>
+                            <constraint firstItem="crh-Sf-HIF" firstAttribute="width" secondItem="AYj-QD-EBg" secondAttribute="width" id="IhC-i1-xbW"/>
+                            <constraint firstItem="xQx-Ir-Aip" firstAttribute="top" secondItem="nqg-bD-zQs" secondAttribute="bottom" constant="10" id="JBN-vx-xTQ"/>
+                            <constraint firstAttribute="trailing" secondItem="MSC-7o-EVn" secondAttribute="trailing" constant="25" id="KK5-k7-gaZ"/>
+                            <constraint firstItem="fWw-rw-AAU" firstAttribute="leading" secondItem="max-pB-cW7" secondAttribute="trailing" constant="5" id="Kfc-dY-X0p"/>
+                            <constraint firstItem="fWw-rw-AAU" firstAttribute="top" secondItem="Zeh-ea-oQa" secondAttribute="bottom" constant="5" id="Kzl-NL-2jR"/>
+                            <constraint firstItem="yJf-Jn-hFF" firstAttribute="top" secondItem="fWw-rw-AAU" secondAttribute="bottom" constant="5" id="LpT-W2-Xwx"/>
+                            <constraint firstItem="I90-fF-fBD" firstAttribute="leading" secondItem="HfK-lV-doa" secondAttribute="trailing" constant="5" id="Lyj-FH-j8l"/>
+                            <constraint firstItem="MSC-7o-EVn" firstAttribute="top" secondItem="fKQ-kv-nhZ" secondAttribute="top" constant="15" id="MSP-56-Jtg"/>
+                            <constraint firstAttribute="trailing" secondItem="nqg-bD-zQs" secondAttribute="trailing" constant="25" id="Od3-xp-7Tb"/>
+                            <constraint firstItem="0gi-Jt-FgA" firstAttribute="leading" secondItem="fKQ-kv-nhZ" secondAttribute="leading" constant="25" id="OrN-RH-ykg"/>
+                            <constraint firstItem="xD0-rm-7lY" firstAttribute="width" secondItem="3NB-h8-Ulc" secondAttribute="width" id="QPQ-iD-UgT"/>
+                            <constraint firstItem="7fn-wG-KCS" firstAttribute="width" secondItem="3tB-Ae-x6R" secondAttribute="width" id="QPb-ed-a3b"/>
+                            <constraint firstItem="3NB-h8-Ulc" firstAttribute="leading" secondItem="tGT-kP-Jpl" secondAttribute="trailing" constant="5" id="Qh6-de-RWD"/>
+                            <constraint firstItem="xB7-aq-VFw" firstAttribute="width" secondItem="HfK-lV-doa" secondAttribute="width" id="RAd-P3-VrC"/>
+                            <constraint firstItem="xB7-aq-VFw" firstAttribute="leading" secondItem="fKQ-kv-nhZ" secondAttribute="leading" constant="25" id="RQV-zm-sNo"/>
+                            <constraint firstItem="3tB-Ae-x6R" firstAttribute="top" secondItem="kUN-Pm-qL2" secondAttribute="bottom" constant="5" id="RTs-sE-sVh"/>
+                            <constraint firstAttribute="trailing" secondItem="xQx-Ir-Aip" secondAttribute="trailing" constant="25" id="RZl-c1-fG0"/>
+                            <constraint firstItem="ZXq-lX-uGP" firstAttribute="leading" secondItem="lwl-Ga-YY8" secondAttribute="trailing" constant="5" id="RiN-4a-Vfk"/>
+                            <constraint firstItem="xX7-0S-9Rd" firstAttribute="top" secondItem="xQx-Ir-Aip" secondAttribute="bottom" constant="5" id="SkY-rc-YFX"/>
+                            <constraint firstItem="xB7-aq-VFw" firstAttribute="width" secondItem="ZXq-lX-uGP" secondAttribute="width" id="Tf7-J7-Uhn"/>
+                            <constraint firstItem="X2u-ZD-NCw" firstAttribute="leading" secondItem="7fn-wG-KCS" secondAttribute="trailing" constant="5" id="V4I-lB-5Eb"/>
+                            <constraint firstItem="ItS-4D-mcU" firstAttribute="leading" secondItem="j4c-Hh-jJq" secondAttribute="trailing" constant="5" id="Vlb-vu-R0e"/>
+                            <constraint firstItem="Zeh-ea-oQa" firstAttribute="leading" secondItem="AYj-QD-EBg" secondAttribute="trailing" constant="5" id="X60-5Q-HGB"/>
+                            <constraint firstItem="7fn-wG-KCS" firstAttribute="width" secondItem="K6q-j8-7jX" secondAttribute="width" id="YR6-uy-S54"/>
+                            <constraint firstItem="JOV-3b-enr" firstAttribute="leading" secondItem="7dm-uk-apw" secondAttribute="trailing" constant="5" id="Z2p-Jd-Uum"/>
+                            <constraint firstItem="7fn-wG-KCS" firstAttribute="leading" secondItem="fKQ-kv-nhZ" secondAttribute="leading" constant="25" id="ZJO-VB-Nzl"/>
+                            <constraint firstItem="MSC-7o-EVn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JOV-3b-enr" secondAttribute="trailing" constant="10" id="a16-Z5-cYS"/>
+                            <constraint firstItem="HfK-lV-doa" firstAttribute="top" secondItem="nqg-bD-zQs" secondAttribute="bottom" constant="10" id="aYJ-MJ-8Qt"/>
+                            <constraint firstItem="7dm-uk-apw" firstAttribute="leading" secondItem="fKQ-kv-nhZ" secondAttribute="leading" constant="25" id="anF-ph-Iao"/>
+                            <constraint firstItem="ItS-4D-mcU" firstAttribute="top" secondItem="ZXq-lX-uGP" secondAttribute="bottom" constant="5" id="bdC-mv-man"/>
+                            <constraint firstItem="ZXq-lX-uGP" firstAttribute="top" secondItem="nqg-bD-zQs" secondAttribute="bottom" constant="10" id="cOK-6l-TJb"/>
+                            <constraint firstItem="xD0-rm-7lY" firstAttribute="width" secondItem="fWw-rw-AAU" secondAttribute="width" id="dt3-7q-xcl"/>
+                            <constraint firstItem="AYj-QD-EBg" firstAttribute="top" secondItem="I90-fF-fBD" secondAttribute="bottom" constant="5" id="f0R-jD-7gE"/>
+                            <constraint firstItem="nqg-bD-zQs" firstAttribute="leading" secondItem="fKQ-kv-nhZ" secondAttribute="leading" constant="25" id="fQO-DF-Bxw"/>
+                            <constraint firstAttribute="trailing" secondItem="3tB-Ae-x6R" secondAttribute="trailing" constant="25" id="fou-4t-2iC"/>
+                            <constraint firstItem="xD0-rm-7lY" firstAttribute="leading" secondItem="fKQ-kv-nhZ" secondAttribute="leading" constant="25" id="hz0-TZ-L0c"/>
+                            <constraint firstAttribute="bottom" secondItem="3tB-Ae-x6R" secondAttribute="bottom" constant="20" id="iPK-jm-6yg"/>
+                            <constraint firstItem="gCJ-5u-isj" firstAttribute="leading" secondItem="I90-fF-fBD" secondAttribute="trailing" constant="5" id="jB2-el-exK"/>
+                            <constraint firstItem="tGT-kP-Jpl" firstAttribute="leading" secondItem="xD0-rm-7lY" secondAttribute="trailing" constant="5" id="jDr-ve-xRc"/>
+                            <constraint firstItem="xB7-aq-VFw" firstAttribute="width" secondItem="lwl-Ga-YY8" secondAttribute="width" id="kks-4J-73P"/>
+                            <constraint firstItem="xB7-aq-VFw" firstAttribute="width" secondItem="xQx-Ir-Aip" secondAttribute="width" id="lWP-nz-SMP"/>
+                            <constraint firstItem="X2u-ZD-NCw" firstAttribute="top" secondItem="tGT-kP-Jpl" secondAttribute="bottom" constant="5" id="mMz-hE-bFB"/>
+                            <constraint firstItem="Mzl-dJ-jaD" firstAttribute="top" secondItem="max-pB-cW7" secondAttribute="bottom" constant="5" id="n3q-vh-wCK"/>
+                            <constraint firstItem="HfK-lV-doa" firstAttribute="leading" secondItem="ZXq-lX-uGP" secondAttribute="trailing" constant="5" id="nWn-TH-BYB"/>
+                            <constraint firstItem="crh-Sf-HIF" firstAttribute="leading" secondItem="fKQ-kv-nhZ" secondAttribute="leading" constant="25" id="ntt-uc-F7v"/>
+                            <constraint firstItem="K6q-j8-7jX" firstAttribute="leading" secondItem="nyN-g7-Gn1" secondAttribute="trailing" constant="5" id="oAa-hU-hqb"/>
+                            <constraint firstItem="3tB-Ae-x6R" firstAttribute="leading" secondItem="yJf-Jn-hFF" secondAttribute="trailing" constant="5" id="pfy-Sy-aqa"/>
+                            <constraint firstItem="yJf-Jn-hFF" firstAttribute="leading" secondItem="Mzl-dJ-jaD" secondAttribute="trailing" constant="5" id="pnR-fY-oCO"/>
+                            <constraint firstItem="Mzl-dJ-jaD" firstAttribute="leading" secondItem="K6q-j8-7jX" secondAttribute="trailing" constant="5" id="q4j-2G-loM"/>
+                            <constraint firstItem="7fn-wG-KCS" firstAttribute="width" secondItem="Mzl-dJ-jaD" secondAttribute="width" id="q9C-1Y-eM0"/>
+                            <constraint firstItem="JOV-3b-enr" firstAttribute="centerY" secondItem="7dm-uk-apw" secondAttribute="centerY" id="qMe-sg-VWG"/>
+                            <constraint firstItem="xB7-aq-VFw" firstAttribute="top" secondItem="nqg-bD-zQs" secondAttribute="bottom" constant="10" id="r7N-xv-N5I"/>
+                            <constraint firstItem="gCJ-5u-isj" firstAttribute="top" secondItem="nqg-bD-zQs" secondAttribute="bottom" constant="10" id="rTw-zA-dy6"/>
+                            <constraint firstItem="tLt-q1-MVc" firstAttribute="leading" secondItem="ItS-4D-mcU" secondAttribute="trailing" constant="5" id="sl7-a6-L2E"/>
+                            <constraint firstItem="7fn-wG-KCS" firstAttribute="top" secondItem="xD0-rm-7lY" secondAttribute="bottom" constant="5" id="u3B-Tu-gTd"/>
+                            <constraint firstItem="xQx-Ir-Aip" firstAttribute="leading" secondItem="gCJ-5u-isj" secondAttribute="trailing" constant="5" id="uM2-My-mHF"/>
+                            <constraint firstItem="nyN-g7-Gn1" firstAttribute="leading" secondItem="X2u-ZD-NCw" secondAttribute="trailing" constant="5" id="uN1-9D-PTm"/>
+                            <constraint firstItem="7dm-uk-apw" firstAttribute="top" secondItem="0gi-Jt-FgA" secondAttribute="bottom" constant="15" id="uby-OR-omE"/>
+                            <constraint firstItem="j4c-Hh-jJq" firstAttribute="leading" secondItem="crh-Sf-HIF" secondAttribute="trailing" constant="5" id="uhU-UM-arq"/>
+                            <constraint firstItem="j4c-Hh-jJq" firstAttribute="top" secondItem="lwl-Ga-YY8" secondAttribute="bottom" constant="5" id="vnu-I0-uA7"/>
+                            <constraint firstItem="3NB-h8-Ulc" firstAttribute="top" secondItem="ItS-4D-mcU" secondAttribute="bottom" constant="5" id="vxJ-3N-4Il"/>
+                            <constraint firstItem="nyN-g7-Gn1" firstAttribute="top" secondItem="3NB-h8-Ulc" secondAttribute="bottom" constant="5" id="w5V-EV-Gke"/>
+                            <constraint firstItem="xD0-rm-7lY" firstAttribute="top" secondItem="crh-Sf-HIF" secondAttribute="bottom" constant="5" id="wAj-EX-A3P"/>
+                            <constraint firstItem="kUN-Pm-qL2" firstAttribute="leading" secondItem="fWw-rw-AAU" secondAttribute="trailing" constant="5" id="xQM-5t-UnG"/>
+                            <constraint firstItem="AYj-QD-EBg" firstAttribute="leading" secondItem="tLt-q1-MVc" secondAttribute="trailing" constant="5" id="yY0-aZ-VJ7"/>
+                            <constraint firstItem="xD0-rm-7lY" firstAttribute="width" secondItem="kUN-Pm-qL2" secondAttribute="width" id="yex-Kb-VLL"/>
+                            <constraint firstItem="crh-Sf-HIF" firstAttribute="width" secondItem="ItS-4D-mcU" secondAttribute="width" id="z9a-d5-Yh9"/>
+                            <constraint firstItem="xB7-aq-VFw" firstAttribute="width" secondItem="gCJ-5u-isj" secondAttribute="width" id="zMw-FA-XnT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fKQ-kv-nhZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="E4D-es-1AS"/>
+                    <constraint firstItem="fKQ-kv-nhZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WGl-B5-gLh"/>
+                    <constraint firstAttribute="trailing" secondItem="fKQ-kv-nhZ" secondAttribute="trailing" constant="20" id="lQX-JJ-G1W"/>
+                    <constraint firstAttribute="bottom" secondItem="fKQ-kv-nhZ" secondAttribute="bottom" constant="15" id="uZ4-Yq-6fG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="affirmImage" destination="MSC-7o-EVn" id="DUj-Ot-Vbv"/>
+                <outlet property="bgView" destination="fKQ-kv-nhZ" id="3ro-Lb-Lp1"/>
+                <outlet property="nameLabel" destination="0gi-Jt-FgA" id="m5q-oS-38M"/>
+                <outlet property="typeImage" destination="7dm-uk-apw" id="QJi-8l-G5t"/>
+                <outlet property="typeLabel" destination="JOV-3b-enr" id="oMA-6g-dzj"/>
+                <outletCollection property="dayViews" destination="xB7-aq-VFw" collectionClass="NSMutableArray" id="un9-AK-Trr"/>
+                <outletCollection property="dayViews" destination="lwl-Ga-YY8" collectionClass="NSMutableArray" id="GSt-TB-yhr"/>
+                <outletCollection property="dayViews" destination="ZXq-lX-uGP" collectionClass="NSMutableArray" id="Nwv-te-s0W"/>
+                <outletCollection property="dayViews" destination="HfK-lV-doa" collectionClass="NSMutableArray" id="Nto-2e-PyK"/>
+                <outletCollection property="dayViews" destination="I90-fF-fBD" collectionClass="NSMutableArray" id="2Gx-E8-1E7"/>
+                <outletCollection property="dayViews" destination="gCJ-5u-isj" collectionClass="NSMutableArray" id="3fr-2x-cr9"/>
+                <outletCollection property="dayViews" destination="xQx-Ir-Aip" collectionClass="NSMutableArray" id="MUU-UE-mt2"/>
+                <outletCollection property="dayViews" destination="crh-Sf-HIF" collectionClass="NSMutableArray" id="UB0-CZ-mWm"/>
+                <outletCollection property="dayViews" destination="j4c-Hh-jJq" collectionClass="NSMutableArray" id="2CB-xK-oeE"/>
+                <outletCollection property="dayViews" destination="ItS-4D-mcU" collectionClass="NSMutableArray" id="Wvc-Te-Ld2"/>
+                <outletCollection property="dayViews" destination="tLt-q1-MVc" collectionClass="NSMutableArray" id="e3h-sD-IWc"/>
+                <outletCollection property="dayViews" destination="AYj-QD-EBg" collectionClass="NSMutableArray" id="JhK-N3-lMM"/>
+                <outletCollection property="dayViews" destination="Zeh-ea-oQa" collectionClass="NSMutableArray" id="3QA-UV-mAW"/>
+                <outletCollection property="dayViews" destination="xX7-0S-9Rd" collectionClass="NSMutableArray" id="SDX-Xa-fta"/>
+                <outletCollection property="dayViews" destination="xD0-rm-7lY" collectionClass="NSMutableArray" id="JmJ-z1-782"/>
+                <outletCollection property="dayViews" destination="tGT-kP-Jpl" collectionClass="NSMutableArray" id="wcI-Ol-OV1"/>
+                <outletCollection property="dayViews" destination="3NB-h8-Ulc" collectionClass="NSMutableArray" id="HgU-BH-6nl"/>
+                <outletCollection property="dayViews" destination="qxU-yf-Tgg" collectionClass="NSMutableArray" id="nJL-gO-ihP"/>
+                <outletCollection property="dayViews" destination="max-pB-cW7" collectionClass="NSMutableArray" id="FF8-VP-rj9"/>
+                <outletCollection property="dayViews" destination="fWw-rw-AAU" collectionClass="NSMutableArray" id="BDI-EV-iVO"/>
+                <outletCollection property="dayViews" destination="kUN-Pm-qL2" collectionClass="NSMutableArray" id="X1s-FE-i9A"/>
+                <outletCollection property="dayViews" destination="7fn-wG-KCS" collectionClass="NSMutableArray" id="NSp-AI-peY"/>
+                <outletCollection property="dayViews" destination="X2u-ZD-NCw" collectionClass="NSMutableArray" id="hbF-Q5-k7o"/>
+                <outletCollection property="dayViews" destination="nyN-g7-Gn1" collectionClass="NSMutableArray" id="3k1-NU-XuT"/>
+                <outletCollection property="dayViews" destination="K6q-j8-7jX" collectionClass="NSMutableArray" id="FDv-Im-Ohb"/>
+                <outletCollection property="dayViews" destination="Mzl-dJ-jaD" collectionClass="NSMutableArray" id="dOv-7P-dtb"/>
+                <outletCollection property="dayViews" destination="yJf-Jn-hFF" collectionClass="NSMutableArray" id="XEF-zS-Tcq"/>
+                <outletCollection property="dayViews" destination="3tB-Ae-x6R" collectionClass="NSMutableArray" id="LIY-7U-Pf7"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="221.65178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="textAffirmIcon" width="22" height="8"/>
+        <namedColor name="secondaryAppColor">
+            <color red="0.87450980392156863" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.019607843137254902" green="0.12549019607843137" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
