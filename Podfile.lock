@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.4.4)
+  - Bagel (1.4.0):
+    - CocoaAsyncSocket
+  - CocoaAsyncSocket (7.6.5)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Bagel
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Bagel
+    - CocoaAsyncSocket
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Bagel: c3fa6bcbd52db9ca976edbafd7638f0553ded101
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+
+PODFILE CHECKSUM: 0f46f78e0a45fb718108bbe88ba5649fb8a68392
+
+COCOAPODS: 1.11.2
